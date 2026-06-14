@@ -56,17 +56,17 @@
 
 <br/>
 
-### The App
+### The App (Windows OS)
 
 <table>
 <tr>
 <td align="center" width="50%">
-<img src="assets/screenshots/app-screenshot-1.png" width="280" alt="Brutus app — home screen"/>
-<br/><sub><b>Home screen — AI orb with live audio visualisation</b></sub>
+<img src="assets/screenshots/app-screenshot-1.png" width="280" alt="Brutus app — Windows OS screen"/>
+<br/><sub><b>Windows OS screen — Brutus running on desktop</b></sub>
 </td>
 <td align="center" width="50%">
-<img src="assets/screenshots/app-screenshot-2.jpg" width="280" alt="Brutus app — chat / voice interface"/>
-<br/><sub><b>Chat / voice interface with live transcripts</b></sub>
+<img src="assets/screenshots/app-screenshot-2.jpg" width="280" alt="Brutus app — Windows OS screen"/>
+<br/><sub><b>Windows OS screen — Brutus in action</b></sub>
 </td>
 </tr>
 </table>
