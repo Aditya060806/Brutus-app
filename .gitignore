@@ -50,5 +50,5 @@ app.*.map.json
 .env
 .env.*
 
-# Local image/screenshot scratch folder — not part of the project
+# Local image/screenshot scratch folder — not part of the project (images moved to assets/screenshots)
 /git  - img/

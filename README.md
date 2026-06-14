@@ -20,6 +20,61 @@
 
 ---
 
+## 📸 See Brutus In Action
+
+<div align="center">
+
+### The Robot Face
+
+<table>
+<tr>
+<td align="center" width="33%">
+<img src="assets/screenshots/robot-build-1.jpg" width="260" alt="Brutus robot build — front view"/>
+<br/><sub><b>Front view — servo layout & LED</b></sub>
+</td>
+<td align="center" width="33%">
+<img src="assets/screenshots/robot-build-2.jpg" width="260" alt="Brutus robot build — wiring"/>
+<br/><sub><b>Internal wiring — Arduino + HM-10 + servos</b></sub>
+</td>
+<td align="center" width="33%">
+<img src="assets/screenshots/robot-build-3.jpg" width="260" alt="Brutus robot build — complete assembly"/>
+<br/><sub><b>Completed assembly</b></sub>
+</td>
+</tr>
+</table>
+
+<br/>
+
+<table>
+<tr>
+<td align="center" width="50%">
+<img src="assets/screenshots/robot-face.jpg" width="320" alt="Brutus robot face close-up"/>
+<br/><sub><b>Face close-up — eye & mouth servos in action</b></sub>
+</td>
+</tr>
+</table>
+
+<br/>
+
+### The App
+
+<table>
+<tr>
+<td align="center" width="50%">
+<img src="assets/screenshots/app-screenshot-1.png" width="280" alt="Brutus app — home screen"/>
+<br/><sub><b>Home screen — AI orb with live audio visualisation</b></sub>
+</td>
+<td align="center" width="50%">
+<img src="assets/screenshots/app-screenshot-2.jpg" width="280" alt="Brutus app — chat / voice interface"/>
+<br/><sub><b>Chat / voice interface with live transcripts</b></sub>
+</td>
+</tr>
+</table>
+
+</div>
+
+---
+
 ## 🌟 What is Brutus?
 
 Brutus is two things in one:
@@ -29,6 +84,29 @@ Brutus is two things in one:
 2. **🤖 A Physical Robot Head** — An Arduino-powered humanoid face with 4 servos (eyes, eyelids, mouth), an LED, and a mic. The app drives the robot's expressions, lip-syncs its mouth to Gemini's voice, and can trigger 20 pre-baked animation sequences — all over Bluetooth Low Energy.
 
 When Brutus talks to you, his robot face **moves its mouth in sync**, changes expressions based on the **emotion in its speech**, and even nods, winks, or laughs on command.
+
+---
+
+## 📊 Project At A Glance
+
+<div align="center">
+
+| Metric | Value |
+|---|---|
+| 📱 **Screens** | 15 feature screens |
+| 🛠️ **AI Tools** | 25+ callable tools |
+| 🎭 **Robot Animations** | 20 (10 macros + 10 tricks) |
+| 😊 **Expressions** | 6 (+ intensity slider 0–100%) |
+| 🔩 **Servos** | 4 × SG90 (eyes X/Y, eyelid, mouth) |
+| 📡 **BLE Commands** | 11 command types |
+| 📦 **Dart Packages** | 30+ pub.dev dependencies |
+| 🧩 **Riverpod Providers** | 12 StateNotifier providers |
+| ⚙️ **Native Kotlin Channels** | 5 (Audio, Screen, Accessibility, Notifications, Automation) |
+| 🤖 **AI Providers** | 4 (Gemini, Groq, Tavily, HuggingFace) |
+| 🗂️ **Lines of Code (approx.)** | 15 000+ |
+| 🏗️ **Architecture** | Feature-first + Riverpod + GoRouter |
+
+</div>
 
 ---
 
@@ -71,6 +149,7 @@ When Brutus talks to you, his robot face **moves its mouth in sync**, changes ex
 ## ✨ App Features
 
 ### 🎙️ Voice & Conversation
+
 | Feature | Description |
 |---|---|
 | **Real-time voice** | Gemini Live API over WebSocket — continuous mic streaming with server-side VAD |
@@ -82,6 +161,7 @@ When Brutus talks to you, his robot face **moves its mouth in sync**, changes ex
 | **Speak for me** | Type text and Brutus reads it aloud in his natural voice |
 
 ### 👁️ Vision & Screen Share
+
 | Feature | Description |
 |---|---|
 | **Camera vision** | Point your camera at anything — Brutus sees and understands it via Gemini multimodal |
@@ -140,12 +220,39 @@ When Brutus talks to you, his robot face **moves its mouth in sync**, changes ex
 </table>
 
 ### 🎨 UI & Design
+
 - **Material 3** design system with warm indigo palette
 - **Animated AI particle sphere** that reacts to Brutus's voice output level
 - **Frosted-glass** bottom navigation
 - Smooth **page transitions** (fade for tabs, slide-up for sub-pages)
 - 15 feature screens — Home, Chat, Tools, Settings, Email, Notes, Research, Oracle, Gallery, Maps, Stocks, Weather, Automation, Search, Robot Control
 - Built with `flutter_animate`, Iconsax icons, and Google Fonts (Inter / Outfit)
+
+---
+
+## 🆚 Brutus vs. Typical AI Assistants
+
+<div align="center">
+
+| Capability | Brutus AI | Google Assistant | Alexa | ChatGPT App |
+|---|:---:|:---:|:---:|:---:|
+| Real-time voice (WebSocket stream) | ✅ | ✅ | ✅ | ✅ |
+| Physical robot face w/ lip-sync | ✅ | ❌ | ❌ | ❌ |
+| Emotion-driven servo expressions | ✅ | ❌ | ❌ | ❌ |
+| 20 named animation macros | ✅ | ❌ | ❌ | ❌ |
+| Screen share → AI understands it | ✅ | ⚠️ Limited | ❌ | ✅ |
+| Camera vision (live frames) | ✅ | ⚠️ Limited | ❌ | ✅ |
+| Ghost typing / tap automation | ✅ | ❌ | ❌ | ❌ |
+| Gmail read + compose | ✅ | ✅ | ❌ | ❌ |
+| Deep multi-source research | ✅ | ❌ | ❌ | ✅ |
+| RAG over your own documents | ✅ | ❌ | ❌ | ✅ |
+| Fully open-source & self-hostable | ✅ | ❌ | ❌ | ❌ |
+| BLE hardware protocol | ✅ | ❌ | ❌ | ❌ |
+| Bring-your-own API keys | ✅ | ❌ | ❌ | ❌ |
+
+> ⚠️ = partial / requires additional setup
+
+</div>
 
 ---
 
@@ -166,6 +273,8 @@ Brutus has a **physical humanoid face** that brings the AI to life. The robot he
 | LED (any color) | 1 | D8 | Status indicator / emotion display |
 | Sound Sensor (analog) | 1 | A0 | Mic for idle mode autonomous lip-sync |
 | 5V Power Supply (2A+) | 1 | — | Power for servos (USB alone isn't enough) |
+
+**💰 Estimated Build Cost: ~$15–25 USD** (Arduino clone + 4× SG90 + HM-10 + LED + misc)
 
 ### 🔌 Wiring Diagram
 
@@ -240,8 +349,6 @@ Each expression can be dialed from **0% (neutral)** to **100% (full)** using the
 | A9 | 🕺 Wiggle | Playful side-to-side jiggle |
 
 ### 🎪 Movement Tricks (W command)
-
-10 additional dramatic/fun movement patterns for demos and personality:
 
 | Index | Name | What It Does |
 |---|---|---|
@@ -318,6 +425,7 @@ brutus_app/
 ├── android/
 │   └── app/src/main/kotlin/ # Native: AudioTrack, Screen capture, Accessibility
 └── assets/
+    ├── screenshots/         # App & hardware photos (README gallery)
     ├── images/
     └── animations/
 ```
@@ -367,12 +475,20 @@ flutter pub get
 Go to **Settings → API Keys** and enter your keys. Stored securely via `flutter_secure_storage`.
 
 **Option B — Embedded (dev only):**  
-Edit `lib/core/constants/app_config.dart`:
+Copy the template and fill in your own keys:
+
+```bash
+cp lib/core/constants/app_config.example.dart lib/core/constants/app_config.dart
+```
+
+Then edit `app_config.dart`:
 ```dart
 static const geminiApiKey = 'YOUR_GEMINI_KEY';
 static const groqApiKey   = 'YOUR_GROQ_KEY';    // for deep research
 static const tavilyApiKey = 'YOUR_TAVILY_KEY';   // for web search
 ```
+
+> `app_config.dart` is git-ignored — your keys will never be accidentally committed.
 
 ### 4. Run the app
 
@@ -448,9 +564,10 @@ Contributions are welcome! Feel free to open issues or submit pull requests.
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+3. Copy `app_config.example.dart` → `app_config.dart` and fill in your keys
+4. Commit your changes (`git commit -m 'Add amazing feature'`)
+5. Push to the branch (`git push origin feature/amazing-feature`)
+6. Open a Pull Request
 
 ---
 
