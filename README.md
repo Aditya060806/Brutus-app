@@ -4,7 +4,7 @@
 
 ### Your AI assistant — with a physical face.
 
-**A fully-featured Android AI assistant that controls a real humanoid robot head over Bluetooth.**
+**A fully featured Android AI assistant that controls a real humanoid robot head over Bluetooth.**
 
 [![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
 [![Arduino](https://img.shields.io/badge/Arduino-UNO-00979D?style=for-the-badge&logo=arduino&logoColor=white)](https://www.arduino.cc)
