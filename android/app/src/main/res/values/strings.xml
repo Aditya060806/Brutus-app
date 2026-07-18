@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Brutus</string>
+    <string name="brutus_accessibility_summary">Lets Brutus type into other apps and send messages on your behalf</string>
+    <string name="brutus_accessibility_description">When enabled, Brutus can type text into the focused field, perform back/home gestures, and tap the WhatsApp send button so you can fire off messages by voice. Brutus only acts when you ask — it never reads or stores screen content silently.</string>
+</resources>
