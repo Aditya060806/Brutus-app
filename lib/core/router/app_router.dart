@@ -17,6 +17,7 @@ import 'package:brutus_app/features/search/web_search_screen.dart';
 import 'package:brutus_app/features/robot/robot_control_screen.dart';
 import 'package:brutus_app/features/robot_eyes/robot_eyes_screen.dart';
 import 'package:brutus_app/features/settings/api_keys_screen.dart';
+import 'package:brutus_app/features/bridge/pc_link_screen.dart';
 import 'package:brutus_app/core/widgets/app_shell.dart';
 
 /// Brutus Mobile — GoRouter configuration
@@ -146,6 +147,13 @@ final appRouter = GoRouter(
               pageBuilder: (context, state) => _slideUpPage(
                 state,
                 const ApiKeysScreen(),
+              ),
+            ),
+            GoRoute(
+              path: 'pc-link',
+              pageBuilder: (context, state) => _slideUpPage(
+                state,
+                const PcLinkScreen(),
               ),
             ),
           ],

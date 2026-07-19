@@ -1369,6 +1369,25 @@ class ChatNotifier extends StateNotifier<ChatState> {
     }
   }
 
+  /// Inject a message that arrived from a paired desktop over the bridge.
+  /// [id] is supplied by the bridge provider so it can tag it as remote and
+  /// avoid echoing it straight back (loop-safe mirroring).
+  void injectRemoteMessage({
+    required MessageRole role,
+    required String text,
+    String? id,
+  }) {
+    if (text.trim().isEmpty) return;
+    final msg = ChatMessage(
+      id: id ?? _uniqueId(),
+      text: text.trim(),
+      role: role,
+      timestamp: DateTime.now(),
+    );
+    state = state.copyWith(messages: [...state.messages, msg]);
+    _schedulePersist();
+  }
+
   // ── Gemini event handler ───────────────────────────────────────────────────
 
   void _listenToGemini() {

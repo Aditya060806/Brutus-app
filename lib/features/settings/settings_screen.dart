@@ -204,11 +204,13 @@ class SettingsScreen extends ConsumerWidget {
               [
                 _SettingItem(
                   icon: Iconsax.monitor,
-                  title: 'Desktop Bridge',
-                  subtitle: 'Connect to Brutus Desktop',
+                  title: 'Phone Bridge',
+                  subtitle: 'Link with Brutus on your PC · sync chat & state',
                   color: AppColors.maps,
-                  badge: 'Soon',
-                  onTap: () => _comingSoon(context, 'Desktop Bridge'),
+                  onTap: () {
+                    HapticFeedback.selectionClick();
+                    context.go('/settings/pc-link');
+                  },
                 ),
                 _SettingItem(
                   icon: Iconsax.cloud_connection,
